@@ -37,10 +37,18 @@ body {
     text-align: center;
 }
 
+footer {
+    background-color: black;
+}
+
 .footer-basic {
-    padding: 40px 0;
-    background-color: #ffffff;
-    color: #4b4c4d;
+    margin-bottom: 0px;
+    font-size: 3em;
+    background-color: #ec7202;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid;
 }
 
 .footer-basic ul {
@@ -50,10 +58,12 @@ body {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
+    color: white;
 }
 
 .footer-basic li {
     padding: 0 10px;
+    padding-top: 20px;
 }
 
 .footer-basic ul a {
@@ -90,11 +100,12 @@ body {
 }
 
 .footer-basic .copyright {
-    margin-top: 15px;
+    margin-top: 35px;
     text-align: center;
     font-size: 13px;
     color: #aaa;
     margin-bottom: 0;
+    height: 3em;
 }
 
 @media screen and (max-width: 500px) {
