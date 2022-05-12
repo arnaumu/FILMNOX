@@ -80,6 +80,12 @@ p {
 }
 
 
+/*  */
+.generos-content {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* some media queries */
 
 @media screen and (max-width: 960px) {
@@ -94,6 +100,7 @@ p {
         flex-basis: 50%;
         /* 2 column layout */
     }
+
     html {
         font-size: 80%;
         /* shrink the fonts a little */
