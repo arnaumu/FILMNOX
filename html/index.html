@@ -7,31 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmnox</title>
     <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\index.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-logo">
-            <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+    <div class="generos-content">
+        <!-- menu de navegacion pagina  -->
+        <div class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+            </div>
+
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class=" menuNav">
+                <a class="active" href="series.html">Series</a>
+                <a class="active" href="peliculas.html">Peliculas</a>
+                <a class="active" href="generos.html">Generos</a>
+            </div>
         </div>
 
-        <div class="header-center">
-            <a href="#home">Series</a>
-            <a href="#contact">Pel·lícules</a>
-            <a href="#about">Gèneres</a>
+        <div class="divWebPresentation effect1">
+            <p>Share your reviews.</p><br>
+            <p>Keep up with the films and TV series premieres.</p><br>
+            <p>Enjoy our featured films and TV series selections sections.</p><br>
+            <p class="filmnox"><a href=""><b>Film</b><b class="colorOrange">N</b><b>ox</a></b>
+            </p>
+            <br>
+            <hr class="dots colorOrange">
         </div>
 
-        <div class="header-login">
-            <a href="#home">Log in</a>
-            <a href="#contact">Sign in</a>
+        <div class="flex-container divFeatured">
+            <p>Featured <b>Drama</b></p>
+            <div class="containerFeatured effect1">
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">City of gods</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Lilya forever</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Elephant</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">We Need to Talk About Kevin</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Once upon a time in America</a>
+                </div>
+            </div>
         </div>
+        <div class="flex-container divFeatured">
+            <p>Featured <b>Drama</b></p>
+            <div class="containerFeatured effect1">
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">City of gods</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Lilya forever</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Elephant</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">We Need to Talk About Kevin</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Once upon a time in America</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </div>
 
     <div class="footer-basic">
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Informació legal</a></li>
-            </ul>
+
+            <p href="#" class="infoLegal">Informació legal</p>
             <p class="copyright">FilmNox © 2022</p>
         </footer>
     </div>

@@ -12,75 +12,236 @@
 
 <body>
     <div class="generos-content">
-        <header>
-            <div class=" header ">
-                <div class="header-logo ">
-                    <img src="..\resources\logoFilmNox.svg " alt="FilmNox logo. " />
-                </div>
-
-                <div class="header-center ">
-                    <a href="../html/series.html ">Series</a>
-                    <a href="../html/peliculas.html ">Pel·lícules</a>
-                    <a class="active " href="../html/generos.html ">Gèneres</a>
-                </div>
-
-                <div class="header-login ">
-                    <a href="#">Log In</a>
-                </div>
+        <!-- menu de navegacion pagina  -->
+        <div class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
             </div>
-        </header>
-        <div class="grid-container">
-            <div class="item2">
-                <h3>Genere list</h3>
-                <ul>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class=" menuNav">
+                <a class="active" href="series.html">Series</a>
+                <a class="active" href="peliculas.html">Peliculas</a>
+                <a class="active" href="generos.html">Generos</a>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="item listGenresContainer">
+                <p class="listTitle">List of genres</p>
+                <ul class="listGenres effect1">
+                    <li><a href="">Action</a></li>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Crime</a></li>
+                    <li><a href="#">Cult</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Erotic</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Historical</a></li>
+                    <li><a href="#">Historical fiction</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Musical</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Satire</a></li>
+                    <li><a href="#">Science fiction</a></li>
+                    <li><a href="#">Short film</a></li>
+                    <li><a href="#">Speculative</a></li>
+                    <li><a href="#">Super heroes</a></li>
+                    <li><a href="#">Western</a></li>
+                    <li><a href="#">War</a></li>
+                    <li><a href="#">Other</a></li>
                 </ul>
             </div>
-            <div class="grid-container2">
-                <div class="item3">Main</div>
-                <div class="item4">Right</div>
+
+            <div class="item-center">
+
+                <div class="flex-container divFeatured">
+                    <div class="">
+                        <p>Featured <b>Drama</b></p>
+                        <div id="slideshow">
+                            <div class="slide-wrapper">
+                                <div class="slide">
+                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
+                                    <p>Film title</p>
+                                </div>
+                                <div class="slide">
+                                    <a href="#"><img src="..\resources\film2_ThePianist.jpg" alt="Saving private Ryan" class="responsive"></a>
+                                    <p>Film title</p>
+                                </div>
+                                <div class="slide">
+                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
+                                    <p>Film title</p>
+                                </div>
+                                <div class="slide">
+                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
+                                    <p>Film title</p>
+                                </div>
+                                <div class="slide">
+                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
+                                    <p>Film title</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="myGallery">
+                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
+                            <img src="..\resources\film2_ThePianist.jpg" alt="Saving private Ryan" class="responsiveGallery" />
+                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
+                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-container divFeatured">
+                    <p>Featured <b>Drama</b></p>
+                    <div class="containerFeatured effect1">
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
+                            <br><br>
+                            <a href="">City of gods</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
+                            <br><br>
+                            <a href="">Lilya forever</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
+                            <br><br>
+                            <a href="">Elephant</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
+                            <br><br>
+                            <a href="">We Need to Talk About Kevin</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
+                            <br><br>
+                            <a href="">Once upon a time in America</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container divFeatured">
+                    <p>Featured <b>Horror</b></p>
+                    <div class="containerFeatured effect1">
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
+                            <br><br>
+                            <a href="">Hereditary</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
+                            <br><br>
+                            <a href="">Antichrist</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
+                            <br><br>
+                            <a href="">The lighthouse</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
+                            <br><br>
+                            <a href="">The grandmother</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
+                            <br><br>
+                            <a href="">Midsommar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container divFeatured">
+                    <p>Featured <b>Horror</b></p>
+                    <div class="containerFeatured effect1">
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
+                            <br><br>
+                            <a href="">Hereditary</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
+                            <br><br>
+                            <a href="">Antichrist</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
+                            <br><br>
+                            <a href="">The lighthouse</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
+                            <br><br>
+                            <a href="">The grandmother</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
+                            <br><br>
+                            <a href="">Midsommar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container divFeatured">
+                    <p>Featured <b>Horror</b></p>
+                    <div class="containerFeatured effect1">
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
+                            <br><br>
+                            <a href="">Hereditary</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
+                            <br><br>
+                            <a href="">Antichrist</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
+                            <br><br>
+                            <a href="">The lighthouse</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
+                            <br><br>
+                            <a href="">The grandmother</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
+                            <br><br>
+                            <a href="">Midsommar</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
+
 
         </div>
 
-        <footer>
-            <div class="footer-bar">
-                <br>
-            </div>
-            <div class="footer-content">
-                <p><a href="# ">Informació legal</a></p>
-                <p class="copyright ">FilmNox © 2022</p>
-            </div>
+        <div class="footer-basic">
+            <footer>
 
-        </footer>
+                <p href="#" class="infoLegal">Informació legal</p>
+                <p class="copyright">FilmNox © 2022</p>
+            </footer>
+        </div>
 
-    </div>
 </body>
 
 </html>

@@ -1,0 +1,156 @@
+a,
+a>span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+a:before,
+a:after,
+a>span:before,
+a>span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+
+/*Effect ok links*/
+
+.effect1 a {
+    /* padding-top: 10px; */
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.effect1 a:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    height: 4px;
+    background: #ec7202;
+    transform: scaleX(0);
+}
+
+.effect1 a:hover:before {
+    transform: scaleX(1);
+}
+
+.spaceForAnimationHover {
+    padding-bottom: 5px;
+}
+
+
+/*MAIN CONTENT  */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*DIVS featured*/
+
+.divFeatured {
+    border: 1px solid black;
+    border-radius: 0.25em;
+    /* margin: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: left;
+    height: auto;
+    width: auto;
+    background-color: #d6d6d6;
+}
+
+
+/**/
+
+.containerFeatured {
+    width: 1000px;
+    margin: 30px auto;
+    background-color: #ddd;
+    display: grid;
+    width: 90%;
+    /* //Using auto-fill and auto-fit */
+    grid-template-rows: repeat(1, minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+}
+
+.item-featured {
+    padding: 10px;
+    text-align: center;
+    /* background-color: orangered; */
+}
+
+.item-featured img {
+    height: 300px;
+    width: auto;
+    text-align: center;
+}
+
+
+/*Web text presentation*/
+
+.divWebPresentation {
+    text-align: center;
+    line-height: 1px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+/*hr*/
+
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+.dots {
+    color: color;
+    height: 10px;
+    border-width: 0 0 8px;
+    border-style: solid;
+    width: 216px;
+    border-radius: 10px;
+}
+
+.colorOrange {
+    color: #ec7202;
+}
+
+.filmnox {
+    font-size: 1.5em;
+}
+
+
+/* some media queries */
+
+@media screen and (max-width: 960px) {
+    .tile-container {
+        flex-basis: 33.33%;
+        /* 3 column layout */
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .tile-container {
+        flex-basis: 50%;
+        /* 2 column layout */
+    }
+    html {
+        font-size: 80%;
+        /* shrink the fonts a little */
+    }
+}
