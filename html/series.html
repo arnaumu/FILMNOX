@@ -8,29 +8,38 @@
     <title>Filmnox</title>
     <link rel="stylesheet" href="..\css\styles.css">
     <link rel="stylesheet" href="..\css\series.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
 
     <!-- menu de navegacion pagina  -->
     <header class="header">
-        <div class="topnav">
-            <div class="logo">
-                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/series.html">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/peliculas.html">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/generos.html">Generos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div class=" menuNav">
-                <a class="active" href="../html/series.html">Series</a>
-                <a class="active" href="../html/peliculas.html">Peliculas</a>
-                <a class="active" href="../html/generos.html">Generos</a>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <!-- CONTENIDO PAGINA -->
@@ -44,15 +53,15 @@
                 </tr>
                 <tr>
                     <td>1. <a href="..\html\detailSerie.html">Anatomia de grey</a></td>
-                    <td class="center"><img src="..\resources\anatomiagrey.jpg" alt="Portada serie de anatomia de grey"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\anatomiagrey.jpg" alt="Portada serie de anatomia de grey"></td>
                 </tr>
                 <tr>
                     <td>1. <a href="..\html\detailSerie2.html">Flash</a></td>
-                    <td class="center"><img src="..\resources\flash.jpg" alt="Portada serie Flash"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\flash.jpg" alt="Portada serie Flash"></td>
                 </tr>
                 <tr>
                     <td>1. <a href="#">S.W.A.T</a></td>
-                    <td class="center"><img src="..\resources\swat.jpg" alt="Portada serie swat"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\swat.jpg" alt="Portada serie swat"></td>
                 </tr>
             </table>
 
@@ -60,15 +69,15 @@
         <div class="content2">
             <div class="info_film">
                 <h2 class="section-title">Anatomia de grey</h2>
-                <img src="..\resources\anatomiagrey.jpg" alt="Portada serie anatomiagrey de grey"> Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas más duro de la Facultad de Medicina de Harvard.
-                Y ella lo va a comprobar. Pero no estará sola. Un grupo de compañeros de promoción tendrán que superar la misma prueba.
+                <img class="img-fluid" src="..\resources\anatomiagrey.jpg" alt="Portada serie anatomiagrey de grey"> Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas más duro de la Facultad de Medicina
+                de Harvard. Y ella lo va a comprobar. Pero no estará sola. Un grupo de compañeros de promoción tendrán que superar la misma prueba.
                 <div class="button"><a href="..\html\detailSerie.html">Entrar</a>
                 </div>
             </div>
             <div class="info_film">
                 <h2 class="section-title">Flash</h2>
-                <img src="..\resources\flash.jpg" alt="Portada serie de flash"> Es una serie derivada de Arrow, que existe en el mismo universo ficticio. La serie sigue a Barry Allen, interpretado por Grant Gustin, un investigador de escenas del crimen
-                que obtiene velocidad sobrehumana, que usa para luchar contra criminales, incluidos otros que también han adquirido habilidades sobrehumanas.
+                <img class="img-fluid" src="..\resources\flash.jpg" alt="Portada serie de flash"> Es una serie derivada de Arrow, que existe en el mismo universo ficticio. La serie sigue a Barry Allen, interpretado por Grant Gustin, un investigador de
+                escenas del crimen que obtiene velocidad sobrehumana, que usa para luchar contra criminales, incluidos otros que también han adquirido habilidades sobrehumanas.
                 <div class="button"><a href="..\html\detailSerie2.html">Entrar</a>
                 </div>
 
@@ -79,23 +88,23 @@
                     <!-- Group 2   -->
                     <div class="media-group">
                         <div class="media-element">
-                            <img src="..\resources\big.jpg" alt="Portada serie de big bang theory">
+                            <img class="img-fluid" src="..\resources\big.jpg" alt="Portada serie de big bang theory">
                             <h1 class="subtitle">Serie 1</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\doctor.jpg" alt="Portada serie de good doctor">
+                            <img class="img-fluid" src="..\resources\doctor.jpg" alt="Portada serie de good doctor">
                             <h1 class="subtitle">Serie 2</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\Merli.jpg" alt="Portada serie marlí">
+                            <img class="img-fluid" src="..\resources\Merli.jpg" alt="Portada serie marlí">
                             <h1 class="subtitle">Serie 3</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\navy.jpg" alt="Portada serie navy seals">
+                            <img class="img-fluid" src="..\resources\navy.jpg" alt="Portada serie navy seals">
                             <h1 class="subtitle">Serie 4</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\robinson.jpg" alt="Portada serie robinson">
+                            <img class="img-fluid" src="..\resources\robinson.jpg" alt="Portada serie robinson">
                             <h1 class="subtitle">Serie 5</h1>
                         </div>
 
@@ -104,23 +113,23 @@
                     <!-- Group 3   -->
                     <div class="media-group">
                         <div class="media-element">
-                            <img src="..\resources\flash.jpg" alt="Portada serie flash">
+                            <img class="img-fluid" src="..\resources\flash.jpg" alt="Portada serie flash">
                             <h1 class="subtitle">Serie 6</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\desalmada.jpg" alt="Portada serie desalmada">
+                            <img class="img-fluid" src="..\resources\desalmada.jpg" alt="Portada serie desalmada">
                             <h1 class="subtitle">Serie 6</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\oteckovia.jpg" alt="Portada serie de oteckovia">
+                            <img class="img-fluid" src="..\resources\oteckovia.jpg" alt="Portada serie de oteckovia">
                             <h1 class="subtitle">Serie 7</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\padre.jpg" alt="Portada serie de padre de familia">
+                            <img class="img-fluid" src="..\resources\padre.jpg" alt="Portada serie de padre de familia">
                             <h1 class="subtitle">Serie 8</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\karda.jpg" alt="Portada serie kardashians">
+                            <img class="img-fluid" src="..\resources\karda.jpg" alt="Portada serie kardashians">
                             <h1 class="subtitle">Serie 9</h1>
                         </div>
 

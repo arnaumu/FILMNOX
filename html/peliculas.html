@@ -8,40 +8,38 @@
     <title>Filmnox</title>
     <link rel="stylesheet" href="..\css\styles.css">
     <link rel="stylesheet" href="..\css\peliculas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- <div class="header">
-        <div class="header-logo">
-            <a href="../html/index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
-        </div>
 
-        <div class="header-center">
-            <a href="../html/series.html">Series</a>
-            <a class="active" href="../html/peliculas.html">Pel·lícules</a>
-            <a href="../html/generos.html">Gèneres</a>
-        </div>
-
-    </div> -->
-    <!-- menu de navegacion pagina  -->
+    <!-- menu de navegacion pagina  con BOOSTRAP-->
     <header class="header">
-        <div class="topnav">
-            <div class="logo">
-                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/series.html">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/peliculas.html">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/generos.html">Generos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div class=" menuNav">
-                <a class="active" href="../html/series.html">Series</a>
-                <a class="active" href="../html/peliculas.html">Peliculas</a>
-                <a class="active" href="../html/generos.html">Generos</a>
-            </div>
-        </div>
+        </nav>
     </header>
     <!-- CONTENIDO PAGINA -->
     <header></header>
@@ -55,15 +53,15 @@
                 </tr>
                 <tr>
                     <td>1. <a href="../html/detailfilm.html">Spider-Man: No Way Home</a></td>
-                    <td class="center"><img src="..\resources\pelicula1.jpg" alt="Portada pelicula Spiderman"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\pelicula1.jpg" alt="Portada pelicula Spiderman"></td>
                 </tr>
                 <tr>
                     <td>1. <a href="../html/detailfilm.html">Ciudad de Dios</a></td>
-                    <td class="center"><img src="..\resources\cityofgods.jpg" alt="Portada pelicula ciudad de dios"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\cityofgods.jpg" alt="Portada pelicula ciudad de dios"></td>
                 </tr>
                 <tr>
                     <td>1. <a href="#">EL Proyecto Adam</a></td>
-                    <td class="center"><img src="..\resources\proyectoadam.jpg" alt="Portada pelicula proyecto adam"></td>
+                    <td class="center"><img class="img-fluid" src="..\resources\proyectoadam.jpg" alt="Portada pelicula proyecto adam"></td>
                 </tr>
             </table>
 
@@ -71,15 +69,15 @@
         <div class="content2">
             <div class="info_film">
                 <h2 class="section-title">Spider-Man</h2>
-                <img src="..\resources\pelicula1.jpg" alt=""> Peter Parker es desenmascarado y por tanto no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un súper héroe. Cuando pide ayuda a Doctor Strange, los riesgos pasan
-                a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.
+                <img class="img-fluid" src="..\resources\pelicula1.jpg" alt=""> Peter Parker es desenmascarado y por tanto no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un súper héroe. Cuando pide ayuda a Doctor Strange,
+                los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.
                 <div class="button"><a href="..\html\detailfilm.html">Entrar</a>
                 </div>
             </div>
             <div class="info_film">
                 <h2 class="section-title">Ciudad de Dios</h2>
-                <img src="..\resources\cityofgods.jpg" alt=" Portada pelicula ciudad de dios"> La película cuenta el desarrollo de la vida de Buscapé (Cohete, hermano de Marreco) en Ciudad de Dios hasta la década de 1970, cuando los antiguos amigos forman
-                ideas distintas sobre la dirección de sus vidas.
+                <img class="img-fluid" src="..\resources\cityofgods.jpg" alt=" Portada pelicula ciudad de dios"> La película cuenta el desarrollo de la vida de Buscapé (Cohete, hermano de Marreco) en Ciudad de Dios hasta la década de 1970, cuando los
+                antiguos amigos forman ideas distintas sobre la dirección de sus vidas.
 
                 <div class="button"><a href="..\html\detailfilm2.html" alt="">Entrar</a>
                 </div>
@@ -91,23 +89,23 @@
                     <!-- Group 2   -->
                     <div class="media-group">
                         <div class="media-element">
-                            <img src="..\resources\lighthouse.jpg" alt="Portada pelicula Light house">
+                            <img class="img-fluid" src="..\resources\lighthouse.jpg" alt="Portada pelicula Light house">
                             <h1 class="subtitle">Pelicula 1</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\hereditary.jpg" alt="Portada pelicula hereditary">
+                            <img class="img-fluid" src="..\resources\hereditary.jpg" alt="Portada pelicula hereditary">
                             <h1 class="subtitle">Pelicula 2</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\theGarandmother.jpg" alt="Portada pelicula the the Garandmother">
+                            <img class="img-fluid" src="..\resources\theGarandmother.jpg" alt="Portada pelicula the the Garandmother">
                             <h1 class="subtitle">Pelicula 3</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\midsommar.jpg" alt="Portada pelicula midsommar">
+                            <img class="img-fluid" src="..\resources\midsommar.jpg" alt="Portada pelicula midsommar">
                             <h1 class="subtitle">Pelicula 4</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\antichrist.jpg" alt="Portada pelicula antichrist">
+                            <img class="img-fluid" src="..\resources\antichrist.jpg" alt="Portada pelicula antichrist">
                             <h1 class="subtitle">Pelicula 5</h1>
                         </div>
                     </div>
@@ -115,23 +113,23 @@
                     <!-- Group 3   -->
                     <div class="media-group">
                         <div class="media-element">
-                            <img src="..\resources\pelicula1.jpg" alt="Portada pelicula de spiderman">
+                            <img class="img-fluid" src="..\resources\pelicula1.jpg" alt="Portada pelicula de spiderman">
                             <h1 class="subtitle">Pelicula 6</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\kevin.jpg" alt="Portada pelicula de kevin">
+                            <img class="img-fluid" src="..\resources\kevin.jpg" alt="Portada pelicula de kevin">
                             <h1 class="subtitle">Pelicula 7</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\america.jpg" alt="Portada pelicula america">
+                            <img class="img-fluid" src="..\resources\america.jpg" alt="Portada pelicula america">
                             <h1 class="subtitle">Pelicula 8</h1>
                         </div>
                         <div class="media-element">
-                            <img src="..\resources\midsommar.jpg" alt="Portada pelicula midsommar">
+                            <img class="img-fluid" src="..\resources\midsommar.jpg" alt="Portada pelicula midsommar">
                             <h1 class="subtitle">Pelicula 9</h1>
                         </div>
                         <div class="media-element">
-                            <img src="/resources/pelicula1.jpg" alt="Portada pelicula spiderman">
+                            <img class="img-fluid" src="/resources/pelicula1.jpg" alt="Portada pelicula spiderman">
                             <h1 class="subtitle">Pelicula 10</h1>
                         </div>
                     </div>
