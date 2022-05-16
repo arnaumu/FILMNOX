@@ -7,26 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmnox</title>
     <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\series.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-logo">
-            <a href="../html/index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+
+    <!-- menu de navegacion pagina  -->
+    <header class="header">
+        <div class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+            </div>
+
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class=" menuNav">
+                <a class="active" href="../html/series.html">Series</a>
+                <a class="active" href="../html/peliculas.html">Peliculas</a>
+                <a class="active" href="../html/generos.html">Generos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PAGINA -->
+    <div class="site_content">
+        <div class="content">
+            <table>
+                <tr>
+                    <th>
+                        <h2 class="section-title">Ranking semanal</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>1. <a href="show.html">Anatomia de grey</a></td>
+                    <td class="center"><img src="..\resources\anatomiagrey.jpg"></td>
+                </tr>
+                <tr>
+                    <td>1. <a href="show.html">Flash</a></td>
+                    <td class="center"><img src="..\resources\flash.jpg"></td>
+                </tr>
+                <tr>
+                    <td>1. <a href="show.html">S.W.A.T</a></td>
+                    <td class="center"><img src="..\resources\swat.jpg"></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="content2">
+            <div class="info_film">
+                <h2 class="section-title">Anatomia de grey</h2>
+                <img src="..\resources\anatomiagrey.jpg">
+                Meredith es una cirujana interna de primer año en el Hospital Grace de Seattle, el programa de prácticas
+                más duro de la Facultad de Medicina de Harvard. Y ella lo va a comprobar. Pero no estará sola. Un grupo
+                de compañeros de promoción tendrán que superar la misma prueba.
+                <div class="button"><a href="#">Entrar</a>
+                </div>
+            </div>
+            <div class="info_film">
+                <h2 class="section-title">Flash</h2>
+                <img src="..\resources\flash.jpg"> Es una serie derivada de Arrow, que existe en el mismo universo
+                ficticio. La serie sigue a Barry Allen, interpretado por Grant Gustin, un investigador de escenas del
+                crimen que obtiene velocidad sobrehumana, que usa para luchar contra criminales, incluidos otros que
+                también han adquirido habilidades sobrehumanas.
+                <div class="button"><a href="#">Entrar</a>
+                </div>
+
+            </div>
+            <div class="info_film">
+                <h2 class="section-title">Recomendación</h2>
+                <div class="media-scroller media-scroller--with-groups snaps-inline">
+                    <!-- Group 2   -->
+                    <div class="media-group">
+                        <div class="media-element">
+                            <img src="/resources/simpson.jpg" alt="">
+                            <h1 class="subtitle">Spider-Man</h1>
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/startrek.jpg" alt="">
+                            <h1 class="subtitle">Spider-Man</h1>
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                            <h1 class="subtitle">Spider-Man</h1>
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                            <h1 class="subtitle">Spider-Man</h1>
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                            <h1 class="subtitle">Spider-Man</h1>
+                        </div>
+                    </div>
+
+                    <!-- Group 3   -->
+                    <div class="media-group">
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                        </div>
+                        <div class="media-element">
+                            <img src="/resources/pelicula1.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="header-center">
-            <a class="active" href="../html/series.html">Series</a>
-            <a href="../html/peliculas.html">Pel·lícules</a>
-            <a href="../html/generos.html">Gèneres</a>
-        </div>
     </div>
+    <br>
+
+    <!-- Contenido mas avanzado -->
 
     <div class="footer-basic">
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Informació legal</a></li>
-            </ul>
+            <p href="#" class="infoLegal">Informació legal</p>
             <p class="copyright">FilmNox © 2022</p>
         </footer>
     </div>
