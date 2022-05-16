@@ -135,6 +135,69 @@ hr {
 }
 
 
+/*Last review */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu main main main main right' 'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    grid-template-rows: 200px auto;
+}
+
+.grid-container img {
+    height: 400px;
+    width: auto;
+    text-align: center;
+}
+
+.grid-container>div {
+    background-color: #ffffff;
+    padding: 20px 0;
+    /* font-size: 30px; */
+}
+
+.item2 {
+    grid-area: menu;
+    text-align: center;
+}
+
+.item3 {
+    grid-area: main;
+    text-align: left;
+}
+
+.item4 {
+    grid-area: right;
+    text-align: center;
+}
+
+.item5 {
+    grid-area: footer;
+    height: auto;
+}
+
+
+/*Stars*/
+
+.checked {
+    color: #ec7202;
+}
+
+
+/*textarea*/
+
+textarea {
+    position: relative;
+    height: 75%;
+    width: 90%;
+    resize: none;
+}
+
+
 /* some media queries */
 
 @media screen and (max-width: 960px) {

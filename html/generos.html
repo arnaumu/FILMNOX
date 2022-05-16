@@ -13,23 +13,25 @@
 <body>
     <div class="generos-content">
         <!-- menu de navegacion pagina  -->
-        <div class="topnav">
-            <div class="logo">
-                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
-            </div>
+        <header class="header">
+            <div class="topnav">
+                <div class="logo">
+                    <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+                </div>
 
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class=" menuNav">
+                    <a class="active" href="../html/series.html">Series</a>
+                    <a class="active" href="../html/peliculas.html">Peliculas</a>
+                    <a class="active" href="../html/generos.html">Generos</a>
+                </div>
             </div>
-            <div class=" menuNav">
-                <a class="active" href="series.html">Series</a>
-                <a class="active" href="peliculas.html">Peliculas</a>
-                <a class="active" href="generos.html">Generos</a>
-            </div>
-        </div>
+        </header>
 
         <div class="container">
 
@@ -64,174 +66,164 @@
 
             <div class="item-center">
 
+                <!-- Auto slider -->
                 <div class="flex-container divFeatured">
                     <div class="">
                         <p>Featured <b>Drama</b></p>
                         <div id="slideshow">
                             <div class="slide-wrapper">
-                                <div class="slide">
+                                <div class="slide effect1">
                                     <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
-                                    <p>Film title</p>
+                                    <p><a class="spaceForAnimationHover">Saving private Ryan</a></p>
                                 </div>
-                                <div class="slide">
-                                    <a href="#"><img src="..\resources\film2_ThePianist.jpg" alt="Saving private Ryan" class="responsive"></a>
-                                    <p>Film title</p>
+                                <div class="slide effect1">
+                                    <a href="#"><img src="..\resources\film2_ThePianist.jpg" alt="The pianist" class="responsive"></a>
+                                    <p><a class="spaceForAnimationHover">The pianist</a></p>
                                 </div>
-                                <div class="slide">
-                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
-                                    <p>Film title</p>
+                                <div class="slide effect1">
+                                    <a href="#"><img src="..\resources\road.jpg" alt="The road" class="responsive"></a>
+                                    <p><a class="spaceForAnimationHover">The road</a></p>
                                 </div>
-                                <div class="slide">
-                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
-                                    <p>Film title</p>
+                                <div class="slide effect1">
+                                    <a href="#"><img src="..\resources\dream.jpg" alt="Requiem for a dream" class="responsive"></a>
+                                    <p><a class="Requiem for a dream">Requiem for a dream</a></p>
                                 </div>
-                                <div class="slide">
-                                    <a href="#"><img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsive"></a>
-                                    <p>Film title</p>
+                                <div class="slide effect1">
+                                    <a href="#"><img src="..\resources\alone.jpg" alt="I stand alone" class="responsive"></a>
+                                    <p><a class="spaceForAnimationHover">I stand alone</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="myGallery">
-                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
-                            <img src="..\resources\film2_ThePianist.jpg" alt="Saving private Ryan" class="responsiveGallery" />
-                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
-                            <img src="..\resources\film1_SoldadoRyan.jpg" alt="Saving private Ryan" class="responsiveGallery" />
-
-
-                        </div>
                     </div>
-
                 </div>
 
+                <!-- Animation -->
+                <div class="flex-container divFeatured">
+                    <p>Featured <b>Animation</b></p>
+                    <div class="containerFeatured effect1">
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\totoro.jpg" alt="Film poster Tonari no Totoro "></a>
+                            <br><br>
+                            <a href="" class="spaceForAnimationHover">Tonari no Totoro </a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\shrek.jpg" alt="Film poster Shrek"></a>
+                            <br><br>
+                            <a href="" class="spaceForAnimationHover">Shrek</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\away.jpg" alt="Film poster Spirited Away"></a>
+                            <br><br>
+                            <a href="" class="spaceForAnimationHover">Spirited Away</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\up.jpg" alt="Film poster Up"></a>
+                            <br><br>
+                            <a href="" class="spaceForAnimationHover">Up</a>
+                        </div>
+                        <div class="item-featured">
+                            <a href="#"><img src="..\resources\inc2.jpg" alt="Film poster Incredibles 2"></a>
+                            <br><br>
+                            <a href="" class="spaceForAnimationHover">Incredibles 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drama -->
                 <div class="flex-container divFeatured">
                     <p>Featured <b>Drama</b></p>
                     <div class="containerFeatured effect1">
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
                             <br><br>
-                            <a href="">City of gods</a>
+                            <a href="" class="spaceForAnimationHover">City of gods</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
                             <br><br>
-                            <a href="">Lilya forever</a>
+                            <a href="" class="spaceForAnimationHover">Lilya forever</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
                             <br><br>
-                            <a href="">Elephant</a>
+                            <a href="" class="spaceForAnimationHover">Elephant</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
                             <br><br>
-                            <a href="">We Need to Talk About Kevin</a>
+                            <a href="" class="spaceForAnimationHover">We Need to Talk About Kevin</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
                             <br><br>
-                            <a href="">Once upon a time in America</a>
+                            <a href="" class="spaceForAnimationHover">Once upon a time in America</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Horror -->
                 <div class="flex-container divFeatured">
                     <p>Featured <b>Horror</b></p>
                     <div class="containerFeatured effect1">
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
                             <br><br>
-                            <a href="">Hereditary</a>
+                            <a href="" class="spaceForAnimationHover">Hereditary</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
                             <br><br>
-                            <a href="">Antichrist</a>
+                            <a href="" class="spaceForAnimationHover">Antichrist</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
                             <br><br>
-                            <a href="">The lighthouse</a>
+                            <a href="" class="spaceForAnimationHover">The lighthouse</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
                             <br><br>
-                            <a href="">The grandmother</a>
+                            <a href="" class="spaceForAnimationHover">The grandmother</a>
                         </div>
                         <div class="item-featured">
                             <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
                             <br><br>
-                            <a href="">Midsommar</a>
+                            <a href="" class="spaceForAnimationHover">Midsommar</a>
                         </div>
                     </div>
                 </div>
-
+                <!-- Romance -->
                 <div class="flex-container divFeatured">
-                    <p>Featured <b>Horror</b></p>
+                    <p>Featured <b>Romance</b></p>
                     <div class="containerFeatured effect1">
                         <div class="item-featured">
-                            <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
+                            <a href="#"><img src="..\resources\lovers.jpg" alt="Film poster Two lovers"></a>
                             <br><br>
-                            <a href="">Hereditary</a>
+                            <a href="" class="spaceForAnimationHover">Two lovers</a>
                         </div>
                         <div class="item-featured">
-                            <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
+                            <a href="#"><img src="..\resources\her.jpg" alt="Film poster Her"></a>
                             <br><br>
-                            <a href="">Antichrist</a>
+                            <a href="" class="spaceForAnimationHover">Her</a>
                         </div>
                         <div class="item-featured">
-                            <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
+                            <a href="#"><img src="..\resources\drac.jpg" alt="Film poster Bram Stoker's Dracula"></a>
                             <br><br>
-                            <a href="">The lighthouse</a>
+                            <a href="" class="spaceForAnimationHover">Bram Stoker's Dracula</a>
                         </div>
                         <div class="item-featured">
-                            <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
+                            <a href="#"><img src="..\resources\sun.jpg" alt="Film poster Eternal Sunshine of the Spotless Mind"></a>
                             <br><br>
-                            <a href="">The grandmother</a>
+                            <a href="" class="spaceForAnimationHover">Eternal Sunshine of the Spotless Mind</a>
                         </div>
                         <div class="item-featured">
-                            <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
+                            <a href="#"><img src="..\resources\paris.jpg" alt="Film poster Midnight in Paris"></a>
                             <br><br>
-                            <a href="">Midsommar</a>
+                            <a href="" class="spaceForAnimationHover">Midnight in Paris</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex-container divFeatured">
-                    <p>Featured <b>Horror</b></p>
-                    <div class="containerFeatured effect1">
-                        <div class="item-featured">
-                            <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
-                            <br><br>
-                            <a href="">Hereditary</a>
-                        </div>
-                        <div class="item-featured">
-                            <a href="#"><img src="..\resources\antichrist.jpg" alt="Film poster Antichrist"></a>
-                            <br><br>
-                            <a href="">Antichrist</a>
-                        </div>
-                        <div class="item-featured">
-                            <a href="#"><img src="..\resources\lighthouse.jpg" alt="Film poster The lighthouse"></a>
-                            <br><br>
-                            <a href="">The lighthouse</a>
-                        </div>
-                        <div class="item-featured">
-                            <a href="#"><img src="..\resources\theGarandmother.jpg" alt="Film poster The grandmother"></a>
-                            <br><br>
-                            <a href="">The grandmother</a>
-                        </div>
-                        <div class="item-featured">
-                            <a href="#"><img src="..\resources\midsommar.jpg" alt="Film poster Midsommar"></a>
-                            <br><br>
-                            <a href="">Midsommar</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
-
-
         </div>
 
         <div class="footer-basic">

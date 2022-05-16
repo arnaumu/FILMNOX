@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmnox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="..\css\styles.css">
     <link rel="stylesheet" href="..\css\index.css">
 </head>
@@ -13,24 +14,27 @@
 <body>
     <div class="generos-content">
         <!-- menu de navegacion pagina  -->
-        <div class="topnav">
-            <div class="logo">
-                <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
-            </div>
+        <header class="header">
+            <div class="topnav">
+                <div class="logo">
+                    <a href="index.html"><img src="..\resources\logoFilmNox.svg" alt="FilmNox logo." /></a>
+                </div>
 
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="search-container">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class=" menuNav">
+                    <a class="active" href="../html/series.html">Series</a>
+                    <a class="active" href="../html/peliculas.html">Peliculas</a>
+                    <a class="active" href="../html/generos.html">Generos</a>
+                </div>
             </div>
-            <div class=" menuNav">
-                <a class="active" href="series.html">Series</a>
-                <a class="active" href="peliculas.html">Peliculas</a>
-                <a class="active" href="generos.html">Generos</a>
-            </div>
-        </div>
+        </header>
 
+        <!-- text index  -->
         <div class="divWebPresentation effect1">
             <p>Share your reviews.</p><br>
             <p>Keep up with the films and TV series premieres.</p><br>
@@ -41,69 +45,125 @@
             <hr class="dots colorOrange">
         </div>
 
+        <!-- featured films -->
         <div class="flex-container divFeatured">
-            <p>Featured <b>Drama</b></p>
+            <h4>Featured <b>Films</b></h4>
             <div class="containerFeatured effect1">
                 <div class="item-featured">
-                    <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
+                    <a href="#"><img src="..\resources\northman.jpg" alt="Film poster The Northamn"></a>
                     <br><br>
-                    <a class="spaceForAnimationHover" href="">City of gods</a>
+                    <a class="spaceForAnimationHover" href="">The Northman</a>
                 </div>
                 <div class="item-featured">
-                    <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
+                    <a href="#"><img src="..\resources\uncharted.jpg" alt="Film poster Uncharted"></a>
                     <br><br>
-                    <a class="spaceForAnimationHover" href="">Lilya forever</a>
+                    <a class="spaceForAnimationHover" href="">Uncharted</a>
                 </div>
                 <div class="item-featured">
-                    <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
+                    <a href="#"><img src="..\resources\batman.jpg" alt="Film poster The Batman"></a>
                     <br><br>
-                    <a class="spaceForAnimationHover" href="">Elephant</a>
+                    <a class="spaceForAnimationHover" href="">The Batman</a>
                 </div>
                 <div class="item-featured">
-                    <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
+                    <a href="detailfilm.html"><img src="..\resources\pelicula1.jpg" alt="Film poster We Need to Spiderman"></a>
                     <br><br>
-                    <a class="spaceForAnimationHover" href="">We Need to Talk About Kevin</a>
+                    <a class="spaceForAnimationHover" href="">Spider-Man: No Way Home</a>
                 </div>
                 <div class="item-featured">
-                    <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
+                    <a href="#"><img src="..\resources\sonic.jpg" alt="Film poster Sonic"></a>
                     <br><br>
-                    <a class="spaceForAnimationHover" href="">Once upon a time in America</a>
-                </div>
-            </div>
-        </div>
-        <div class="flex-container divFeatured">
-            <p>Featured <b>Drama</b></p>
-            <div class="containerFeatured effect1">
-                <div class="item-featured">
-                    <a href="#"><img src="..\resources\cityofgods.jpg" alt="Film poster City of gods"></a>
-                    <br><br>
-                    <a class="spaceForAnimationHover" href="">City of gods</a>
-                </div>
-                <div class="item-featured">
-                    <a href="#"><img src="..\resources\lilya4ever.jpg" alt="Film poster Lilya forever"></a>
-                    <br><br>
-                    <a class="spaceForAnimationHover" href="">Lilya forever</a>
-                </div>
-                <div class="item-featured">
-                    <a href="#"><img src="..\resources\elephant.jpg" alt="Film poster Elephant"></a>
-                    <br><br>
-                    <a class="spaceForAnimationHover" href="">Elephant</a>
-                </div>
-                <div class="item-featured">
-                    <a href="#"><img src="..\resources\kevin.jpg" alt="Film poster We Need to Talk About Kevin"></a>
-                    <br><br>
-                    <a class="spaceForAnimationHover" href="">We Need to Talk About Kevin</a>
-                </div>
-                <div class="item-featured">
-                    <a href="#"><img src="..\resources\america.jpg" alt="Film poster Once upon a time in America"></a>
-                    <br><br>
-                    <a class="spaceForAnimationHover" href="">Once upon a time in America</a>
+                    <a class="spaceForAnimationHover" href="">Sonic the Hedgehog 2</a>
                 </div>
             </div>
         </div>
 
+        <!-- featured tv series -->
+        <div class="flex-container divFeatured">
+            <h4>Featured <b>TV Shows</b></h4>
+            <div class="containerFeatured effect1">
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\peaky.jpg" alt="Film poster Peaky Blinders"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Peaky Blinders</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\got.jpg" alt="Film poster Game of Thrones"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Game of Thrones</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\halo.jpg" alt="Film poster Halo"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Halo</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\bb.jpg" alt="Film poster Breaking Bad"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Breaking Bad</a>
+                </div>
+                <div class="item-featured">
+                    <a href="#"><img src="..\resources\vikings.jpg" alt="Film poster Vikings"></a>
+                    <br><br>
+                    <a class="spaceForAnimationHover" href="">Vikings</a>
+                </div>
+            </div>
+        </div>
 
-
+        <!-- featured tv series -->
+        <div class="flex-container divFeatured">
+            <h4>Last <b>Reviews</b></h4>
+            <div class="lastReview effect1">
+                <div class="grid-container">
+                    <div class="item2">
+                        <a href="#"><img src="..\resources\hereditary.jpg" alt="Film poster Hereditary"></a>
+                    </div>
+                    <div class="item3">
+                        <h3><a class="spaceForAnimationHover" href="">Hereditary (2018)</a></h3>
+                        <h1><b>Really good horror film!</b></h1>
+                        <h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </h1>
+                    </div>
+                    <div class="item4">
+                        <p><a class="spaceForAnimationHover" href="">User</a></p>
+                    </div>
+                    <div class="item5">
+                        <p>Review:</p>
+                        <textarea readonly>This messed up film was on my top 9 of 2018. It is a journey and it is only full of dread. There are moments that are too much and it's tough to watch. I get the divided audience review, much like The Witch. It is not straight forward horror and that is hard to gain an audience. Collette should have taken out best actress, her performance is amazing. Byrne is rock solid in support and it's great to see him in a role that deserves his presence. The film spirals to the finale and if you cannot board the train, it won't sit well for you. This is a film that audiences will find in the coming years and I feel the word of mouth will be kind. The critics loved it, but the audience was divided, which is a good thing. It will be reassessed by the audience, not the critics who have tricked the audience into thinking this is a straight forward horror film. The film has all the qualities of a horror classic to endure the test of time and I suspect this will be something of a long term cult classic. Great filmmaking and one film that will sit with you after the conclusion. 09/03/2019</textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="grid-container">
+                    <div class="item2">
+                        <a href="#"><img src="..\resources\titane.jpg" alt="Film poster Titane"></a>
+                    </div>
+                    <div class="item3">
+                        <h3><a class="spaceForAnimationHover" href="">Titane (2021)</a></h3>
+                        <h1><b>Really good horror film!</b></h1>
+                        <h1>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </h1>
+                    </div>
+                    <div class="item4">
+                        <p><a class="spaceForAnimationHover" href="">User</a></p>
+                    </div>
+                    <div class="item5">
+                        <p>Review:</p>
+                        <textarea readonly>Crash! Boom! Bang! - Film Review: Titane ★★★★1/2 For me, good art is pretty, but great art is confrontational, forcing the viewer to reflect upon the human condition and reveal truths, however inspiring or ugly. The 2021 Cannes Palme d'Or winner, Titane, writer/director Julia Ducournau's sophomore effort, definitely veers towards the latter type of confrontation. With enough brutal violence to fill all of the Halloween sequels combined, this viscerally charged film will likely polarize audiences, but its vision and power cannot be denied. A highly visual, almost wordless film, Titane begins with Alexia, a young, androgynous girl, pestering her father by kicking the back of his driver's seat. Annoyed, he turns to scold her, swerving off the road and injuring his daughter. Saved by a titanium implant in her head, we next see Alexia as a young adult (phenomenally played by Agathe Rouselle), in a scene highly reminiscent of the opening single shot from Brian De Palma's Femme Fatale, strutting toward her job as a dancer at an Auto Show. With punk rock aggressiveness, she forces her way through the crowd and ends up gyrating on the hood of car. A combination of antisocial, disturbed, or just not having the time of day for anyone else's problems, Alexia, in a series of horrifically bloody scenes, establishes herself as a relentless serial killer, gets impregnated by a car (not a typo!), and uses a chopstick for all the wrong reasons. She seduces men and women alike while never cracking a smile or exhibiting an ounce of joy. You may not like this feminist anti-hero, but you won't ever forget her. I wouldn't blame you for walking out at this point, as it's not for the delicate stomach, but if you stay, you'll be richly rewarded with this decidedly queer body horror thriller. Disguising herself as a young man to evade police capture, Alexia eventually gets taken in by a lonely fire captain named Vincent (Vincent London). This hulking, muscular, man believes Alexia to be his long-missing son, causing Alexia to use binding cloth to hide her breasts and expanding belly. Vincent has troubles of his own as he's often seen injecting himself with an unnamed substance which could possible be steroids or heroin. The bond the pair forms proves surprisingly touching, especially in a scene involving CPR and the song, "Macarena". Where all this leads may not surprise you, but it manages to land in that no man's land between beauty and dread. Besides De Palma, it's easy to spot Ducournau's other influences such as Gasper Noé's Irreversible, David Cronenberg's Crash, and Jean-Jacques Beineix's Betty Blue. I also couldn't help but see the link between the film and Jonathan Glazer's hypnotic Under The Skin, both involving otherworldly women on killing sprees. Her muscular, in your face style has that 80s punk aesthetic, forcing you to slam against the back of your seat with its non-stop drive and cover your eyes half the time. Aided immensely by cinematographer Ruben Impens, Ducournau has a style of her own, simultaneously over-the-top and bleak and keyed in tight to the emotional cores of her lead actors. Inspirations be damned, Ducournau has a singularly driving yet tender cinematic voice. Titane is a film about trauma, anger, human bonds, gender identity, and the ability for even the most troubled among us to tap into their humanity. It's a work of art in its assaultive, unforgettable, confrontational way.</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
